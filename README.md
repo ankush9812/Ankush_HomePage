@@ -4,7 +4,7 @@ A modern, responsive personal homepage showcasing research activities, publicati
 
 ## 🎯 Overview
 
-This is a professional homepage for Ankush Agarwal, PhD student at IIT Bombay, specializing in Machine Learning, Natural Language Processing, and Knowledge Graphs. The website features a modern design with smooth animations and interactive elements.
+This is a professional homepage for Ankush Agarwal, AI Researcher at Fujitsu Research India with Masters from IIT Bombay, specializing in Machine Learning, Natural Language Processing, and Knowledge Graphs. The website features a modern design with smooth animations and interactive elements.
 
 ## ✨ Features
 
@@ -157,15 +157,17 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 👨‍💻 Author
 
 **Ankush Agarwal**
-- 🎓 PhD Student at IIT Bombay
+- 🎓 AI Researcher at Fujitsu Research India
+- 🎓 Masters from IIT Bombay
 - 🔬 Research: Machine Learning, NLP, Knowledge Graphs
-- 📧 Email: ankush@iitb.ac.in
+- 📧 Email: ankush98.12@gmail.com
 - 🔗 [Google Scholar](https://scholar.google.com/citations?user=lWCB7X4AAAAJ&hl=en)
 - 💼 [LinkedIn](https://www.linkedin.com/in/ankush-agarwal)
 
 ## 🙏 Acknowledgments
 
-- IIT Bombay for academic support
+- Fujitsu Research India for professional support
+- IIT Bombay for academic foundation
 - Research collaborators and co-authors
 - Open source community for tools and inspiration
 
