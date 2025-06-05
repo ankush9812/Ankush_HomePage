@@ -86,6 +86,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Function to fetch live Google Scholar data (requires CORS proxy or backend)
+    async function fetchScholarData() {
+        try {
+            // Note: Direct Google Scholar API access is limited due to CORS
+            // This is a placeholder for future implementation with a backend service
+            
+            // For now, we'll use static data but with a timestamp to show when it was last updated
+            const lastUpdated = new Date().toLocaleDateString();
+            const updateNote = document.createElement('div');
+            updateNote.className = 'stats-update-note';
+            updateNote.innerHTML = `<small><i class="fas fa-clock"></i> Stats last verified: ${lastUpdated}</small>`;
+            updateNote.style.cssText = `
+                text-align: center;
+                margin-top: 1rem;
+                color: #6b7280;
+                font-style: italic;
+            `;
+            
+            const statsContainer = document.querySelector('.about-stats');
+            if (statsContainer) {
+                statsContainer.appendChild(updateNote);
+            }
+            
+            // TODO: Implement backend service to fetch live data
+            // Example implementation would look like:
+            /*
+            const response = await fetch('/api/scholar-stats');
+            const data = await response.json();
+            
+            document.querySelector('[data-target="59"]').setAttribute('data-target', data.citations);
+            document.querySelector('[data-target="4"]').setAttribute('data-target', data.hIndex);
+            // ... update other stats
+            */
+            
+        } catch (error) {
+            console.log('Scholar data fetch not implemented yet');
+        }
+    }
+
     // Intersection Observer for animations
     const observerOptions = {
         threshold: 0.1,
@@ -100,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Trigger counter animation when stats section is visible
                 if (entry.target.classList.contains('about-stats')) {
                     animateCounters();
+                    fetchScholarData(); // Add timestamp note
                 }
             }
         });
