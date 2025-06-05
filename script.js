@@ -40,27 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Typing animation
+    // Static text - typing animation removed
     const typingText = document.querySelector('.typing-text');
     if (typingText) {
-        const text = "Hi, I'm Ankush Agarwal";
-        let index = 0;
-        
-        function typeWriter() {
-            if (index < text.length) {
-                typingText.textContent = text.slice(0, index + 1);
-                index++;
-                setTimeout(typeWriter, 100);
-            } else {
-                setTimeout(() => {
-                    index = 0;
-                    typingText.textContent = '';
-                    typeWriter();
-                }, 2000);
-            }
-        }
-        
-        typeWriter();
+        typingText.textContent = "Hi, I'm Ankush Agarwal";
     }
 
     // Counter animation for stats
