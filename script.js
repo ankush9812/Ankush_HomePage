@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const message = formData.get('message');
             
             // Create mailto link
-            const mailtoLink = `mailto:ankush@iitb.ac.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            const mailtoLink = `mailto:ankush98.12@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
             
             // Open email client
             window.location.href = mailtoLink;
